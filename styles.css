@@ -5,6 +5,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background: hsl(212, 45%, 89%);
   font-family: "Outfit", sans-serif;
   font-size: 0.9375rem;
@@ -13,25 +18,17 @@ body {
   text-align: center;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 1.8rem;
-}
-
 article {
   background: hsl(0, 0%, 100%);
   padding: 1rem 1rem 2.4rem 1rem;
   max-width: 20rem;
   border-radius: 20px;
   box-shadow: 0 12px 20px 15px hsla(219, 15%, 55%, 0.12);
+}
 
-  & p {
-    margin: 1rem 0.5rem 0;
-    letter-spacing: 0.2px;
-  }
+.article-text {
+  margin: 1rem 0.5rem 0;
+  letter-spacing: 0.2px;
 }
 
 h1 {
@@ -48,16 +45,17 @@ img {
 }
 
 footer {
-  margin-bottom: 1.5rem;
+  width: 100%;
+  margin: 5rem 0 1.5rem;
 }
 
-footer a {
+a {
   text-decoration: none;
   color: hsla(217, 45%, 22%, 0.836);
-  transition: all 0.3s ease;
-}
+  transition: all 0.2s ease;
 
-footer a:hover {
-  font-weight: 600;
-  color: hsla(217, 45%, 22%);
+  &:hover {
+    font-weight: 600;
+    color: hsla(217, 45%, 22%);
+  }
 }
